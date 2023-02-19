@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  background-image: linear-gradient(45deg, red, black, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.list ul {
+  display: flex;
+  list-style: none;
+}
+.list ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  transition: all 0.7s;
+}
+.list ul li a:hover {
+  color: red;
+}
+#btn-login {
+  padding: 8px 15px;
+  border: 2px solid red;
+  margin-right: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+#btn-login:hover {
+  background-color: red;
+  color: white;
+  transition: 0.7s;
+}
+.background {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./img/cheerful-woman-watching-film-tablet.jpg");
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding-bottom: 20px;
+  height: calc(100vh - 60px);
+}
+.content h1 {
+  margin-bottom: 10px;
+}
+.input {
+  background-color: white;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.input input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+}
+.input button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+.input button:hover {
+  cursor: pointer;
+  color: red;
+  transition: 0.7s;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px;
+}
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transition: all 0.7s;
+  border-radius: 40px;
+  display: block;
+  filter: grayscale(100%);
+}
+.card img:hover {
+  filter: none;
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+  height: 500px;
+  position: relative;
+}
+.card button {
+  width: 62%;
+  display: block;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.ab {
+  position: absolute;
+}
+.ab button {
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.ab a svg {
+  font-size: 50px;
+  color: white;
+}
+.cards-slider {
+  display: flex;
+  max-width: 100vw;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 365px;
+  background-image: url("./img/wp10615910-movie-collection-wallpapers.jpg");
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+.cards-slider h1 {
+  display: flex;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+@media (max-width: 720px) {
+  .ls {
+    display: none;
+  }
+  .input {
+    width: 325px;
+  }
+  .input input {
+    width: 100%;
+  }
+  .input button {
+    margin-right: 10px;
+  }
+  .cards-slider h1 {
+    font-size: 27px;
+  }
+}
+.carousel-container {
+  width: 100%;
+}
