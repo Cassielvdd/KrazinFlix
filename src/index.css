@@ -97,6 +97,14 @@ header h1 {
   align-items: center;
   border-radius: 20px;
 }
+.input {
+  color: black;
+}
+.input a {
+  color: red;
+}
+.input a:hover {
+}
 
 .input input {
   width: 90%;

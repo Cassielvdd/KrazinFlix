@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 function Home() {
   const [filmes, setFilmes] = useState([]);
   const [rated, setRated] = useState([]);
+  const [valor, setValor] = useState("");
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -54,6 +55,7 @@ function Home() {
     }
     Top();
   }, []);
+
   return (
     <div className="background">
       <Header />
@@ -62,10 +64,15 @@ function Home() {
           <h1>Busque por um Filme</h1>
           <form action="">
             <div className="input">
-              <input type="text" placeholder="Buscar Filme" />
-              <button>
+              <input
+                type="text"
+                placeholder="Buscar Filme"
+                value={valor}
+                onChange={(e) => setValor(e.target.value)(e.preventDefault())}
+              />
+              <Link to={`/search/${valor}`}>
                 <FontAwesomeIcon icon={faSearch} />
-              </button>
+              </Link>
             </div>
           </form>
         </div>

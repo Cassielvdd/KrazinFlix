@@ -1,0 +1,51 @@
+.result-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  padding: 10px;
+}
+.result-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+  padding: 10px;
+}
+.result-box {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid red;
+  padding: 5px 15px;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+.right a:hover {
+  background-color: red;
+}
+@media (max-width: 720px) {
+  .left img {
+    height: 200px;
+    width: 200px;
+  }
+  .right h1 {
+    font-size: 24px;
+  }
+  .right p {
+    font-size: 13px;
+  }
+}

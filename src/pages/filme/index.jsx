@@ -83,7 +83,12 @@ function PageF() {
               <FontAwesomeIcon icon={faSave} />
             </button>
             <button className="play">
-              <FontAwesomeIcon icon={faPlay} />
+              <a
+                href={`https://youtube.com/results?search_query=${filme.original_title}+Trailer`}
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faPlay} />
+              </a>
             </button>
           </div>
         </div>
@@ -105,7 +110,7 @@ function PageF() {
                   alt=""
                 />
                 <div className="ab">
-                  <Link to={`/`}>
+                  <Link to={`/filme/${item.id}`}>
                     <FontAwesomeIcon icon={faPlay} />
                   </Link>
                 </div>
